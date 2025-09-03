@@ -1,2 +1,0 @@
-# drp_story
-aaaaaa
