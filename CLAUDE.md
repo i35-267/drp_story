@@ -22,7 +22,6 @@ AI運用5原則
 #[n] times. # n = increment each chat, end line, etc(#1, #2...)
 </every_chat>
 
-
 # ファイル構成の説明
 - config.md : 本書を概要と章立てについて記載しています
 - setting/plot.md : 物語部分のプロットを記載しています
