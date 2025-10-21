@@ -18,3 +18,93 @@ alwaysApply: true
 - setting/plot.md : 物語部分のプロットを記載しています
 - setting/character.md : 物語の登場人物設定（主人公・PM・テックリード・上司・QA等の詳細な人物像と関係性）
 - setting/writing_rules.md : 執筆時のルールとガイドラインを記載しています
+- setting/pain_points.md : 技術的課題（ペイン）のデータベース（技術背景・根本原因・解決アプローチ）
+
+## ディレクトリ構造と相関関係
+
+```
+drp_story/
+├── setting/                    # マスターデータ層
+│   ├── config.md              # 全体設計（目次・対象読者）
+│   ├── plot.md                # 【マスター】全章のストーリー・シーン
+│   ├── character.md           # キャラクター設定
+│   ├── pain_points.md         # 【マスター】技術的課題データベース
+│   └── writing_rules.md       # 執筆ガイドライン
+│
+└── chapter_X/                  # 章ごとの実装層
+    ├── chapter_X_plan.md      # 章の執筆計画
+    ├── chapter_X_pain_mapping.md  # 【マッピング】この章で扱うペイン
+    └── chapter_X.md           # 【最終成果物】実際の原稿
+```
+
+## マスターファイルとデータフロー
+
+### マスターファイルの位置づけ
+
+| ファイル | 役割 | 更新タイミング | 影響範囲 |
+|---------|------|---------------|---------|
+| **setting/plot.md** | **シーン・ストーリーのマスター** | 章追加時、シーン追加時 | 全章の構成 |
+| **setting/pain_points.md** | **技術課題のマスター** | 新課題発見時 | 解説パート |
+| setting/character.md | キャラクター設定 | 初期のみ | ストーリー |
+| setting/config.md | 全体構成 | 初期のみ | 目次・章立て |
+| setting/writing_rules.md | 執筆ルール | ガイドライン更新時 | 文体・構成 |
+
+### データフロー図
+
+```
+setting/plot.md (シーン) + setting/pain_points.md (技術課題)
+              ↓
+chapter_X/chapter_X_pain_mapping.md (どのシーンでどのペインを扱うか)
+              ↓
+chapter_X/chapter_X.md (実装)
+```
+
+## コンテンツ追加時の手順
+
+### 1. 新しいシーンを追加したい場合
+
+**手順：**
+1. `setting/plot.md`の該当章に新しいシーンを追加（マスター更新）
+2. `chapter_X/chapter_X_pain_mapping.md`でシーンとペインを紐付け
+3. `chapter_X/chapter_X.md`で実際のストーリーと解説を執筆
+
+**例：第1章に「コードレビューの時間が取れない」シーンを追加**
+```
+① setting/plot.md に追加
+   #### シーン4: コードレビューのジレンマ
+   湊が急いでコードを書き、レビューを依頼するが...
+
+② chapter_1/chapter_1_pain_mapping.md に追加
+   ### 1-2-2 追加シーン：コードレビューのジレンマ
+   - 対応ペイン: Pain 2（工数見積もりの不正確さ）
+   - 技術解説: レビュー時間を見積もりに含める重要性
+
+③ chapter_1/chapter_1.md に実装
+   - ストーリーパート追加
+   - 解説パート追加
+   - 実践のヒント追加
+```
+
+### 2. 新しい技術的課題（ペイン）を追加したい場合
+
+**手順：**
+1. `setting/pain_points.md`に新しいペインを追加（マスター更新）
+   - 技術的背景
+   - 根本原因
+   - 解決アプローチ
+2. `chapter_X/chapter_X_pain_mapping.md`でどのシーンでそのペインを扱うか紐付け
+3. `chapter_X/chapter_X.md`で実装
+
+### 3. キャラクターの行動を変更したい場合
+
+**手順：**
+1. `setting/character.md`でキャラクター設定を確認
+2. `setting/plot.md`で該当シーンを調整
+3. `chapter_X/chapter_X.md`で実装
+
+## ファイル間の依存関係
+
+- **setting/plot.md** → すべての `chapter_X/chapter_X.md` に影響
+- **setting/pain_points.md** → すべての `chapter_X/chapter_X_pain_mapping.md` および解説パートに影響
+- **setting/writing_rules.md** → すべての `chapter_X/chapter_X.md` の文体・構成に影響
+- **chapter_X/chapter_X_pain_mapping.md** → 該当する `chapter_X/chapter_X.md` のみに影響
