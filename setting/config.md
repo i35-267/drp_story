@@ -385,6 +385,17 @@ ValueStreamの各工程をAIネイティブなプロセスで高速化し、同�
 ・役割別アクションガイド（PM/エンジニア/QA/マネージャー向け）
 ・さらに学びを深めるための参考文献・ツール集
 
+### さらに学びを深めるための参考文献・ツール集（マスターリスト）
+
+本書で触れた文献を選んで掲載する。項目は `setting/reference/merged_references.md` の §8（参考文献・リンク一覧）に合わせて定義する。実際の付録本文は別ファイルまたは付録用原稿で記述する。
+
+- **理論・古典**: Brooks（No Silver Bullet, The Mythical Man-Month）
+- **測定フレームワーク**: DORA metrics guide, DORA 2025 State of AI-assisted Software Development, Four Keys, SPACE framework (Forsgren et al.)
+- **生産性測定の学術文献**: Petersen, Hernández-López et al., Oliveira et al., Rüegger et al., Beller et al. (DAT)
+- **国内（FP・生産性）**: FP法の標準化動向, FP生産性の分析事例（BIPROGY）
+- **AIと開発生産性（実証・業界）**: Nature Human Behaviour, HBR (Ranganathan & Ye), BCG, MIT Sloan, California Management Review, Faros AI, Google開発者実験, METR, Demirer et al.
+- **その他**: GitClear, JetBrains, Qodo, McKinsey
+
 ### 開発生産性に関するペイン一覧
 
 詳細なペイン分析については、`setting/pain_points.md`を参照してください。
