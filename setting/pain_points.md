@@ -851,7 +851,7 @@
 
 **測定ツール:**
 - GitHub Insights（コード活動の可視化）
-- Jira/Linear（プロジェクト管理）
+- チケット管理ツール（プロジェクト管理）
 - Datadog/New Relic（システムメトリクス）
 - Sleuth/Jellyfish（DORA Metrics測定）
 
