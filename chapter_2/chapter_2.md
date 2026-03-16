@@ -379,7 +379,23 @@ QA部という別組織からの視点は、湊にとって新鮮だった。機
 
 それぞれの視点は「正しい」が、統合されていないことで問題が起きます。エンジニアが技術的負債の返済を優先したいと考えても、PMは新機能のリリースを優先したいと考えます。QAがテスト時間を確保したいと考えても、管理職はコスト削減を優先します。
 
-生産性を多角的に捉えるうえでは、研究で使われている枠組みが参考になります。DORA メトリクスでは、デプロイ頻度・変更リードタイム（スピード）と、変更失敗率・復旧時間（安定性）を**対**で捉え、どちらか一方だけを追うのではなく両方のバランスを見ることを推奨しています。また SPACE という枠組みでは、開発者生産性を満足度（Satisfaction）・パフォーマンス（Performance）・活動量（Activity）・コミュニケーション（Communication）・効率（Efficiency）の多次元で扱うべきだとしています。一つの数値だけでなく、複数の軸を組み合わせて見ることで、湊が感じた「どれも一面的だ」という違和感を解きほぐすヒントになります。
+特に**エンジニアリング**の領域において生産性を多角的に捉えるうえでは、研究で使われている枠組みが参考になります。
+
+**DORA（DevOps Research and Assessment）** は、Google Cloud の DORA チームによる継続研究で、Nicole Forsgren、Jez Humble、Gene Kim らの成果が書籍 **『Accelerate: The Science of Lean Software and DevOps』** にまとめられています。年次の **State of DevOps Report** では大規模な調査が続いており、ソフトウェアデリバリーのパフォーマンスを測る指標として**Four Keys**（四つの鍵）が提唱されています。
+
+具体的には、**デプロイ頻度**（deployment frequency）・**変更リードタイム**（change lead time）の二つで「スピード」を、**変更失敗率**（change fail rate）・**サービス復元時間**（time to restore service）の二つで「安定性」を表し、これらを**対**で捉えてどちらか一方だけを追わないことを推奨しています。
+
+統計的分析により、**「速度と安定性はトレードオフではない」** ことが示されており、コード行数やコミット数ではなく、デリバリーの速度と安定性という実際の価値に近い指標で評価する枠組みを提供しています。指標の具体的な目標値や測定方法は、第4章の「DORAの科学的アプローチとFour Keys」および章末の「手法4 脱・形骸化指標リスト」で扱います。
+
+一方、**SPACE** は、Forsgren らによる論文 *"The SPACE of Developer Productivity: There's more to it than you think"*（ACM Queue, 2021）で提唱された枠組みです。開発者生産性を五つの次元で扱うべきだとしています。
+
+**S**atisfaction and well-being（満足度・ウェルビーイング）、**P**erformance（成果・パフォーマンス）、**A**ctivity（活動量）、**C**ommunication and collaboration（コミュニケーション・協働）、**E**fficiency and flow（効率・フロー）です。
+
+これらの指標同士には**緊張関係（trade-off）**があり、活動量（A）だけを追うと、長時間労働や悪いシステムへの力技でかえって悪化しうると警告しています。
+
+したがって、**単一の数値ではなく複数の軸を組み合わせて**見ることが推奨されます。
+
+一つの数値だけでなく、複数の軸を組み合わせて見ることで、湊が感じた「どれも一面的だ」という違和感を解きほぐすヒントになります。
 
 #### 欠陥修正コストの段階的増大
 
@@ -671,7 +687,7 @@ QA部という別組織からの視点は、湊にとって新鮮だった。機
 
 ## 参考文献
 
-- DORA（DevOps Research and Assessment）. DORA metrics guide. https://dora.dev/guides/dora-metrics/（デプロイ頻度・変更リードタイムと変更失敗率・復旧時間を対で捉える指標）。
-- Forsgren, N. et al. "The SPACE of Developer Productivity." ACM Queue, 2021. 開発者生産性を Satisfaction / Performance / Activity / Communication / Efficiency の多次元で扱う枠組み。
+- DORA（DevOps Research and Assessment）. Google Cloud の DORA チームによる継続研究。『Accelerate: The Science of Lean Software and DevOps』（Gene Kim, Jez Humble, Nicole Forsgren 著）にまとめられ、Four Keys は https://dora.dev/guides/dora-metrics/ で公開。デプロイ頻度・変更リードタイムと変更失敗率・復旧時間を対で捉える指標。
+- Forsgren, N., Storey, M.-A., Maddila, C., Zimmermann, T., Houck, B., Butler, J. "The SPACE of Developer Productivity: There's more to it than you think." ACM Queue, 2021. 開発者生産性を Satisfaction / Performance / Activity / Communication / Efficiency の多次元で扱う枠組み。
 - 開発者体験・ウェルビーイング：仕事満足度と知覚的生産性の双方向の因果、自己評価の生産性と相関する仕事への熱意・ピアサポート・有益なフィードバック。
 - DevEx（Developer Experience）：フィードバックループ・認知負荷・フロー状態の3次元、アウトプット量より「フロー状態を維持できる時間」を重視する考え方（merged_references §2 に要約）。
