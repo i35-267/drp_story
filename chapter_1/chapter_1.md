@@ -456,7 +456,7 @@ Slackの通知音が鳴り止まない。湊は作業を中断して次々と送
 「品質とスピードはトレードオフ」と言われますが、短期的にスピードが上がっても、長期的には品質の低下により開発速度が大幅に低下します。
 
 開発者生産性の研究では、生産性は単一指標では測れないことが繰り返し指摘されています。
-たとえば、「SPACE」というフレームワークでは、開発者生産性を満足度（Satisfaction）・パフォーマンス・活動量（Activity）・コミュニケーション・効率（Efficiency）の多次元で扱うべきだとし、活動量だけを増やすと長時間労働や悪いシステムの力技でかえって悪化しうると警告しています。コード量やリリース数に偏った測定は、実態を過大評価したり歪めたりするおそれがあります。
+たとえば、フォースグレンら（ACM Queue, 2021）の *The SPACE of Developer Productivity* に示された「SPACE」というフレームワークでは、開発者生産性を満足度（Satisfaction）・パフォーマンス・活動量（Activity）・コミュニケーション・効率（Efficiency）の多次元で扱うべきだとし、活動量だけを増やすと長時間労働や悪いシステムの力技でかえって悪化しうると警告しています。コード量やリリース数に偏った測定は、実態を過大評価したり歪めたりするおそれがあります。第2章以降で扱う開発者体験（DevEx）の整理では、ノダら（ACM Queue, Vol. 21, No. 2, 2023）がフィードバックループ・認知負荷・フロー状態という三つの軸で「どこを直すか」をまとめる、という流れも参照できます。
 
 #### 遅れたプロジェクトに人を追加すると逆効果になりうる（ブルックスの法則）
 
@@ -691,6 +691,7 @@ Slackの通知音が鳴り止まない。湊は作業を中断して次々と送
 - フレデリック・ブルックス, "No Silver Bullet — Essence and Accidents of Software Engineering"
 - ブルックス, "The Mythical Man-Month: Essays on Software Engineering" (1975/1995). 書籍（Addison-Wesley）
 - Forsgren, N. et al. "The SPACE of Developer Productivity." ACM Queue, 2021. 開発者生産性を Satisfaction / Performance / Activity / Communication / Efficiency の多次元で扱う枠組み。活動量だけの増加は長時間労働や悪いシステムの力技で悪化しうると警告。
+- Noda, A. et al. "DevEx: What Actually Drives Productivity?" ACM Queue, Vol. 21, No. 2, 2023. フィードバックループ・認知負荷・フロー状態の三軸。第2章で詳述。
 - DORA（DevOps Research and Assessment）. DORA metrics guide. https://dora.dev/guides/dora-metrics/ スピードと安定性の対でフローを捉える指標。
 
 ---

@@ -570,6 +570,8 @@ DORAレポート10年の変遷が示す核心的な結論は、AI駆動開発に
 3. **エンジニアリーダーとしての成長** チームの生産性を考え、自分たちの開発力が事業やプロダクトにどう影響するかを理解し、開発生産性をお金に変換できる視点を持ち、自分たちで指標を作りながら自己成長する
 4. **DevOpsの成熟度の重要性** AI時代の成功は、DevOpsの歴史的積み重ねの上に成り立つ。基礎を着実に積み上げることが、AI駆動開発の成功につながる
 
+本書全体を通じた整理として、開発者生産性は単一指標では足りず（フォースグレンら、*The SPACE of Developer Productivity*, ACM Queue, 2021）、介入の語彙としてはフィードバックループ・認知負荷・フローに要因をまとめる研究（ノダら、*DevEx: What Actually Drives Productivity?*, ACM Queue, Vol. 21, No. 2, 2023）や、大規模実証（フォースグレンら、*DevEx in Action*, ACM Queue, Vol. 21, No. 6, 2024）が参照されやすい、という位置づけに立ち返れます。摩擦を減らし、信頼とコード品質の両方を時間軸で見る——湊の物語が向かってきた方向と、こうした研究の主張は重なります。
+
 ### DORAレポートが示す5つのアクション
 
 これからの時代を生き抜くために組織は何をすべきか。DORAレポートは、以下の5つの具体的なアクションを提言しています。
@@ -603,6 +605,10 @@ AIは開発者の燃え尽きや業務上の摩擦を増大させるリスクを
 ## 参考文献
 
 本章で言及した文献・出典を挙げる。
+
+- **Forsgren, N. et al.** (2021). "The SPACE of Developer Productivity." ACM Queue. 多次元の生産性観。
+- **Noda, A. et al.** (2023). "DevEx: What Actually Drives Productivity?" ACM Queue, Vol. 21, No. 2. DevExの三軸と測定。
+- **Forsgren, N. et al.** (2024). "DevEx in Action: A Study of Its Tangible Impacts." ACM Queue, Vol. 21, No. 6. 大規模実証。
 
 - **MIT Sloan**  
   MIT Sloan "Why AI Will Not Provide Sustainable Competitive Advantage"（MIT Sloan 公式サイトで検索）
