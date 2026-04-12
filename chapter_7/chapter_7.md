@@ -618,7 +618,7 @@ AIは開発者の燃え尽きや業務上の摩擦を増大させるリスクを
   https://cmr.berkeley.edu/2025/10/seven-myths-about-ai-and-productivity-what-the-evidence-really-says/
 
 - **§7（組織変革・補完的導入）**  
-  IT投資と生産性の歴史的研究（Solow、Brynjolfsson等）。組織変革と補完的に導入した場合にプラスのリターンがあること。merged_references.md の §7（IT生産性パラドックスと歴史的教訓）を参照。
+  IT投資と生産性の歴史的研究（Solow、Brynjolfsson等）。組織変革と補完的に導入した場合にプラスのリターンがあること。IT生産性パラドックスと歴史的教訓を扱う補足である。
 
 - **BCG（10-20-70）**  
   BCG (2024) "Where's the Value in AI?" 等（BCG 公式サイトで検索）。10-20-70ルール（10%アルゴリズム、20%技術・データ、70%人材・プロセス）。
