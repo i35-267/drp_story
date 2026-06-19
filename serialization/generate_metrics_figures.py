@@ -35,7 +35,7 @@ def figure_goodhart_law():
                 arrowprops=dict(arrowstyle="<->", color=COLOR, lw=0.85))
     ax.text(6.55, (metric[6] + performance[6]) / 2, "見かけと\n実態の乖離",
             fontsize=7.6, color=COLOR, ha="left", va="center")
-    ax.set_title("グットハートの法則：追う数値は上がるが、実際のパフォーマンスは下がる（概念図）",
+    ax.set_title("グッドハートの法則：追う数値は上がるが、実際のパフォーマンスは下がる（概念図）",
                  fontsize=10.2, color=COLOR, pad=10)
     ax.set_xlabel("時間（四半期）", fontsize=10, color=COLOR)
     ax.set_ylabel("相対指数（概念値）", fontsize=10, color=COLOR)
